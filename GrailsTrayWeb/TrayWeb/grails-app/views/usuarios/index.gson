@@ -1,0 +1,8 @@
+import mx.Usuarios
+
+model {
+	Iterable<Usuarios> usuariosList
+}
+
+json tmpl.usuarios(usuariosList ?: [])
+

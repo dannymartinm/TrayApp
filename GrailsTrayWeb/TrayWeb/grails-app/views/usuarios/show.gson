@@ -1,0 +1,7 @@
+import mx.Usuarios
+
+model {
+	Usuarios usuarios
+}
+
+json tmpl.usuarios(usuarios)

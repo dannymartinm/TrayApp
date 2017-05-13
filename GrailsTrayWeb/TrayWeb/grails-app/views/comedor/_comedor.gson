@@ -1,0 +1,10 @@
+import mx.Comedor
+
+model {
+	Comedor comedor
+}
+
+json g.render(comedor)
+
+
+

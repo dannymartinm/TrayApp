@@ -1,0 +1,7 @@
+import mx.Friends
+
+model {
+	Friends friends
+}
+
+json tmpl.friends(friends)

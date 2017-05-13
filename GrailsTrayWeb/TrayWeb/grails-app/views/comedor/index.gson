@@ -1,0 +1,8 @@
+import mx.Comedor
+
+model {
+	Iterable<Comedor> comedorList
+}
+
+json tmpl.comedor(comedorList ?: [])
+

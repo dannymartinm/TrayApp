@@ -1,0 +1,7 @@
+import mx.Comedor
+
+model {
+	Comedor comedor
+}
+
+json tmpl.comedor(comedor)

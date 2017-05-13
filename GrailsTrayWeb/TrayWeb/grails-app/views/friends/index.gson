@@ -1,0 +1,8 @@
+import mx.Friends
+
+model {
+	Iterable<Friends> friendsList
+}
+
+json tmpl.friends(friendsList ?: [])
+

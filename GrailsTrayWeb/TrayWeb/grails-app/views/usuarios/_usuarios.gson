@@ -1,0 +1,21 @@
+import mx.Usuarios
+
+model {
+	Usuarios usuarios
+}
+
+json{
+
+	id usuarios.id
+	nombreCompleto usuarios.nombre+" "+usuarios.apellido
+	nickname usuarios.nickname
+	telefono usuarios.telefono
+	email usuarios.email
+	PrefComidas g.render(usuarios.comidas, [deep: true]) 
+	PrefAlergias g.render(usuarios.alergias, [deep:true])
+	PrefEnfermedades g.render(usuarios.enfermedades, [deep:true])
+	PrefDiarias g.render(usuarios.pDiarias, [deep:true])
+	Comedores g.render(usuarios.comedores, [deep:true])
+	Friends g.render(usuarios.friends, [deep:true])
+}
+
